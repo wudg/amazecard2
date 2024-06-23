@@ -1,0 +1,59 @@
+@media (max-width: 1000px) {
+    /* 在屏幕宽度小于1000像素时应用的样式 */
+    .layout-wrapper {
+        display: block;
+        .left {
+            margin: 0;
+        }
+        .top {
+            border-radius: 0;
+            padding: 0;
+            min-height: auto;
+            box-shadow: none;
+        }
+        .bottom {
+            border-radius: 8px;
+            box-shadow: none;
+            margin: 16px 16px;
+        }
+        .right {
+            margin-top: 12px;
+            display: none;
+            .options {
+                border-radius: 0;
+            }
+        }
+
+        .expression {
+            width: 306px;
+        }
+        .top{
+            box-shadow: none;
+        } 
+        .mobile {
+            display: flex;
+            margin: 16px 16px;
+        }
+        .right.mobile {
+            .options {
+                height: 500px;
+                overflow-y: auto;
+                padding: 0;
+                width: 100%;
+                box-shadow: none;
+            }
+        }
+        .mobile.select {
+            padding: 12px; 
+            border-radius: 8px;
+            justify-content: center;
+            background: var(--current-block-background-color); 
+        }
+        .dow {
+            width: auto;
+        }
+        .button-group {
+            display: none;
+        }
+    }
+}
